@@ -3,8 +3,7 @@ Panels:
     Help Height: 0
     Name: Displays
     Property Tree Widget:
-      Expanded:
-        - /LaserScan1
+      Expanded: ~
       Splitter Ratio: 0.5
     Tree Height: 301
   - Class: rviz/Selection
@@ -940,7 +939,7 @@ Visualization Manager:
       Value: true
     - Alpha: 0.699999988079071
       Class: rviz/Map
-      Color Scheme: raw
+      Color Scheme: costmap
       Draw Behind: false
       Enabled: true
       Name: GlobalCostmap
@@ -969,7 +968,7 @@ Visualization Manager:
       Queue Size: 10
       Selectable: true
       Size (Pixels): 3
-      Size (m): 0.009999999776482582
+      Size (m): 0.05000000074505806
       Style: Flat Squares
       Topic: /mur620/scan
       Unreliable: false
