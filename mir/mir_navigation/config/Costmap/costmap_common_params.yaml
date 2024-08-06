@@ -3,7 +3,7 @@ robot_base_frame: $(arg tf_prefix_slashed)base_footprint
 ### footprint
 footprint: [[0.506,-0.32],[0.506,0.32],[-0.454,0.32],[-0.454,-0.32]]
 footprint_padding: 0.0
-transform_tolerance: 3.0 #0.4   changed by Malte Heinrich
+transform_tolerance: 4.0 #0.4   changed by Malte Heinrich
 update_frequency: 5.0
 publish_frequency: 1.0
 obstacle_range: 10.0
@@ -39,7 +39,14 @@ obstacles:
     inf_is_valid: false
     min_obstacle_height: 0.13
     max_obstacle_height: 0.25
-
+  f_scan_clearing:
+    topic: f_scan_rep117
+    data_type: LaserScan
+    clearing: true
+    marking: false
+    inf_is_valid: false
+    min_obstacle_height: 0.13
+    max_obstacle_height: 0.25
   scan_marking:
     topic: scan
     data_type: LaserScan
